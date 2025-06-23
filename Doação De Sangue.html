@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doe Vida - Campanha de Doação de Sangue</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-red-600 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Doe Vida</h1>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+          <li><a href="#beneficios" class="hover:underline">Benefícios</a></li>
+          <li><a href="#locais" class="hover:underline">Locais</a></li>
+          <li><a href="#cadastro" class="hover:underline">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="bg-cover bg-center h-80 flex items-center justify-center text-white text-center" style="background-image: url('https://images.unsplash.com/photo-1588776814546-d08d8e87f5fb?fit=crop&w=1470&q=80');">
+    <div class="bg-black bg-opacity-60 p-6 rounded-lg">
+      <h2 class="text-4xl font-bold mb-2">Salve vidas com um simples gesto</h2>
+      <p class="text-lg">Doe sangue. Um ato de amor e solidariedade.</p>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="max-w-5xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-semibold text-red-700 mb-4">Por que doar sangue?</h2>
+    <p class="text-gray-700 text-lg">
+      A doação de sangue é um gesto simples, rápido e seguro que pode salvar até 4 vidas. Milhares de pessoas dependem de transfusões todos os dias. Ao doar, você ajuda hospitais a manterem os estoques necessários para emergências, cirurgias e tratamentos.
+    </p>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="bg-red-50 py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-red-700 mb-8 text-center">Benefícios de ser doador</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 shadow-md rounded-lg text-center">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Check-up gratuito</h3>
+          <p>Você recebe exames básicos de saúde durante a triagem.</p>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg text-center">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Solidariedade</h3>
+          <p>Ajuda a salvar vidas e impacta positivamente a comunidade.</p>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg text-center">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Renovação</h3>
+          <p>Estimula a produção de novas células sanguíneas no organismo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locais de Doação -->
+  <section id="locais" class="max-w-5xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-semibold text-red-700 mb-6 text-center">Locais de Doação Próximos</h2>
+    <p class="text-center text-lg mb-6">Veja no mapa os hemocentros mais próximos de você:</p>
+    <div class="overflow-hidden rounded-lg shadow-lg border border-gray-300">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14633.401202512454!2d-47.06172720164825!3d-22.9055572805985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c99ed1744e03%3A0x221df47d65cb24fd!2sHemocentro%20UNICAMP!5e0!3m2!1spt-BR!2sbr!4v1719179238889" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section id="cadastro" class="max-w-3xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-semibold text-red-700 mb-6 text-center">Cadastre-se como Doador</h2>
+    <form class="bg-white p-6 shadow-md rounded-lg space-y-4">
+      <div>
+        <label for="nome" class="block text-sm font-medium text-gray-700">Nome completo</label>
+        <input type="text" id="nome" name="nome" class="w-full mt-1 p-2 border border-gray-300 rounded-md" required>
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+        <input type="email" id="email" name="email" class="w-full mt-1 p-2 border border-gray-300 rounded-md" required>
+      </div>
+      <div>
+        <label for="telefone" class="block text-sm font-medium text-gray-700">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" class="w-full mt-1 p-2 border border-gray-300 rounded-md">
+      </div>
+      <div>
+        <label for="tipo-sanguineo" class="block text-sm font-medium text-gray-700">Tipo Sanguíneo</label>
+        <select id="tipo-sanguineo" name="tipo-sanguineo" class="w-full mt-1 p-2 border border-gray-300 rounded-md">
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+          <option>O+</option>
+          <option>O-</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-red-600 text-white p-2 rounded-md hover:bg-red-700 transition">Cadastrar</button>
+    </form>
+  </section>
+
+  <!-- Links úteis -->
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-red-700 mb-6 text-center">Links Úteis do Governo</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Ministério da Saúde -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <img src="Public/Ministerio.png" alt="Ministério da Saúde" class="w-full h-28 object-contain mb-4">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Ministério da Saúde</h3>
+          <p class="text-sm mb-3">Informações oficiais sobre doação de sangue.</p>
+          <a href="https://www.gov.br/saude/pt-br" target="_blank" class="inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Acessar</a>
+        </div>
+
+        <!-- Hemocentro Unicamp -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <img src="Public/Hemo Unicamp.png" alt="Hemocentro Unicamp" class="w-full h-28 object-contain mb-4">
+          <h3 class="text-xl font-bold text-red-600 mb-2">Hemocentro UNICAMP</h3>
+          <p class="text-sm mb-3">Informações de doação em Campinas e região.</p>
+          <a href="https://www.hemocentro.unicamp.br/" target="_blank" class="inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Acessar</a>
+        </div>
+
+        <!-- HemoRede Nacional -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <img src="Public/Hemo.png" alt="HemoRede Nacional" class="w-full h-28 object-contain mb-4">
+          <h3 class="text-xl font-bold text-red-600 mb-2">HemoRede Nacional</h3>
+          <p class="text-sm mb-3">Mapa com hemocentros em todo o Brasil.</p>
+          <a href="https://www.gov.br/saude/pt-br/composicao/saes/hemorrede-nacional" target="_blank" class="inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Acessar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-600 text-white text-center p-4 mt-12">
+    <p>© 2025 Doe Vida. Todos os direitos reservados.</p>
+    <p class="text-sm">Contato: (19) 99999-9999 | email@doevida.org</p>
+  </footer>
+
+</body>
+</html>
