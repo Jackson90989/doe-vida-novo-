@@ -19,5 +19,3 @@ Este é um projeto web institucional de conscientização e incentivo à doaçã
 - HTML5
 - Tailwind CSS (via CDN)
 - Responsividade com classes utilitárias
-
----
