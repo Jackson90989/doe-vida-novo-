@@ -21,6 +21,3 @@ Este é um projeto web institucional de conscientização e incentivo à doaçã
 - Responsividade com classes utilitárias
 
 ---
-
-## Estrutura do Projeto
-
